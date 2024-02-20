@@ -1,5 +1,5 @@
 import { createApp } from 'vue';
-
-createApp({}).mount('#app');
-
-console.log('test');
+import App from './App.vue';
+import baseCard from './components/UI/BaseCard.vue'
+createApp(App).mount('#app');
+App.components(baseCard);
